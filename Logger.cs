@@ -1,3 +1,5 @@
+private static readonly ILog Logger = LogManager.GetLogger(typeof(Program));
+
 public static void LoggerConfiguration()
 {
     var hierarchy = (Hierarchy)LogManager.GetRepository();
