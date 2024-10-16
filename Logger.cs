@@ -1,3 +1,11 @@
+GO
+GRANT REFERENCES ON [dbo].[sp_DealerDataSearch] TO [ChantillyWSro]
+GO
+GRANT VIEW DEFINITION ON [dbo].[sp_DealerDataSearch] TO [ChantillyWSro]
+GO
+GRANT EXECUTE ON [dbo].[sp_DealerDataSearch] TO [ChantillyWSro]
+
+
 private static readonly ILog Logger = LogManager.GetLogger(typeof(Program));
 
 public static void LoggerConfiguration()
