@@ -10,6 +10,16 @@ namespace TableTypeInLine
         {
             try
             {
+                
+                 var assembly = Assembly.Load("MyServices");
+
+    // Register all types implementing interfaces in the assembly
+    container.RegisterTypes(
+        AllClasses.FromAssemblies(assembly),
+        WithMappings.FromMatchingInterface,
+        WithName.Default,
+        WithLifetime.Transient);
+
                 string connectionString = "ConnectString";
 
 
